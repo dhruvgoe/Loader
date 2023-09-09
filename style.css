@@ -1,0 +1,34 @@
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid blue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { 
+      transform: rotate(0deg); 
+    }
+    25%{
+      transform: rotate(90deg);
+      border-top: 20px solid red;
+    }
+    50%{
+      transform: rotate(180deg);
+      border-top: 20px solid yellow;
+    }
+    75%{
+      transform: rotate(270deg);
+      border-top: 20px solid green;
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
